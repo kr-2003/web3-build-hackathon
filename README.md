@@ -12,6 +12,18 @@ This is a decentralized application (DApp) NFT Marketplace built on Ethereum blo
 1. Node.js: Make sure you have Node.js installed on your system.
 2. Ethereum wallet: Install an Ethereum wallet like MetaMask to interact with the marketplace using your Ethereum account.
 
+### Installation
+1. Clone this repo
+    ```git clone <repo_name>```
+2. Create a .env file with the following vars:
+   
+    ```API_URL=https://testnet.aurora.dev```
+    ```PRIVATE_KEY=<private_key_of_your_account>```
+3. ```cd web3-build-hackathon```
+4. ```npm install```
+5. ```npx hardhat run src/backend/scripts/deploy.js --network aurora```
+6. ```npm run start```
+
 ### Usage
 1. Connect your Ethereum wallet: Click on the "Connect Wallet" button and follow the prompts to connect your Ethereum wallet (e.g., MetaMask) to the DApp.
 2. Create and mint NFTs: Use the DApp's interface to create and mint your own NFTs. Specify the token details, upload the associated media, and set a price for sale if desired.
