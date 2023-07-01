@@ -56,8 +56,8 @@ const Home = ({ marketplace, nft }) => {
   }, []);
   if (loading)
     return (
-      <main style={{ padding: "1rem 0" }}>
-        <h2>Loading...</h2>
+      <main className="h-[100v]" style={{ padding: "1rem 0" }}>
+        <h2 className="h-[100vh]">Loading...</h2>
       </main>
     );
   return (
@@ -65,7 +65,7 @@ const Home = ({ marketplace, nft }) => {
       {items.length > 0 ? (
         <div className="px-5 py-3 container">
           {/* <h2 className="text-white">Listed</h2> */}
-          <div className="g-4 py-3 grid grid-cols-4 gap-4">
+          <div className="g-4 py-3 grid grid-cols-4 gap-4 h-[60vh]">
             {items.map((item, idx) => (
               <div key={idx} className="overflow-hidden rounded-lg h-100">
                 <div
@@ -108,7 +108,7 @@ const Home = ({ marketplace, nft }) => {
           </div>
         </div>
       ) : (
-        <main style={{ padding: "1rem 0" }}>
+        <main className="h[100v]" style={{ padding: "1rem 0" }}>
           <h2>No listed assets</h2>
         </main>
       )}

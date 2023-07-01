@@ -70,7 +70,7 @@ function App() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  minHeight: "80vh",
+                  minHeight: "95vh",
                 }}
               >
                 <Spinner animation="border" style={{ display: "flex" }} />

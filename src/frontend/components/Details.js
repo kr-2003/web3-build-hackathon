@@ -135,16 +135,9 @@ function Details({ marketplace, nft }) {
               <div className="font-bold text-4xl">{item.name}</div>
               <div>{item.address}</div>
               <div className="bg-[#141519] rounded-lg p-2 mt-4">
-                <div className="text-white ">
-                  <div className="grid grid-cols-2 w-40 gap-2">
-                    <img
-                      className="h-10 w-10"
-                      src={require("./ethereum.png")}
-                    ></img>
-                    <div className="h-100 flex items-center justify-center font-bold text-white text-4xl">
-                      {ethers.utils.formatEther(item.totalPrice)}
-                      <span className="text-sm ml-2">ETH</span>
-                    </div>
+                <div className="text-white">
+                  <div className="w-40 gap-2">
+                    <div className="text-4xl">{ethers.utils.formatEther(item.totalPrice)}<span className="text-md ml-4">ETH</span></div>
                   </div>
                   {!item.sold && (
                     <button
